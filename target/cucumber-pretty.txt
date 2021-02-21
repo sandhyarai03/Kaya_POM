@@ -1,0 +1,41 @@
+Feature: Kayak Flight search feature
+
+  Scenario: Flight search functionality                                                                         # KayakHomePage.feature:3
+    Given user is on Kayak Application                                                                          # KayakStepDefTest.user_is_on_Kayak_Application()
+    When user clicks on Flight button                                                                           # KayakStepDefTest.user_clicks_on_Flight_button()
+    And user enters the <originCityAirport> also selects the nearAll airport                                    # KayakStepDefTest.user_enters_the_originCityAirport_also_selects_the_nearAll_airport()
+    And user enters the and <destinationCityAirport>also selects the nearAll airport                            # KayakStepDefTest.user_enters_the_and_destinationCityAirport_also_selects_the_nearAll_airport()
+      org.openqa.selenium.ElementNotInteractableException: element not interactable
+        (Session info: chrome=88.0.4324.182)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'Sandhya-Rai.attlocal.net', ip: '2600:1700:4a3d:8430:0:0:0:13%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_241'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/88/zslqystj7p7...}, goog:chromeOptions: {debuggerAddress: localhost:51938}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: 4efeb179b03c906764d4feb276944521
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+      	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+      	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+      	at com.Utils.BrowserUtilities.ufClearFieldByBackSpaceKey(BrowserUtilities.java:222)
+      	at com.Kayak.Pages.KayakHomePage.enterDestinationCity(KayakHomePage.java:161)
+      	at stepDefination.KayakStepDefTest.user_enters_the_and_destinationCityAirport_also_selects_the_nearAll_airport(KayakStepDefTest.java:47)
+      	at ✽.And user enters the and <destinationCityAirport>also selects the nearAll airport(KayakHomePage.feature:7)
+
+    And user selects the <startDate> and <endDate>                                                              # KayakStepDefTest.user_selects_the_startDate_and_endDate()
+    And user clicks on search button
+    And user unselects the two Stop Option
+    Then user should be able to see the search result based on <originCityAirport> and <destinationCityAirport>

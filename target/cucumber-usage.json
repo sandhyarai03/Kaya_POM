@@ -1,0 +1,56 @@
+[
+  {
+    "source": "^user clicks on Flight button$",
+    "steps": [
+      {
+        "name": "user clicks on Flight button",
+        "aggregatedDurations": {
+          "average": 1.172562653,
+          "median": 1.172562653
+        },
+        "durations": [
+          {
+            "duration": 1.172562653,
+            "location": "KayakHomePage.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user is on Kayak Application$",
+    "steps": [
+      {
+        "name": "user is on Kayak Application",
+        "aggregatedDurations": {
+          "average": 0.079048456,
+          "median": 0.079048456
+        },
+        "durations": [
+          {
+            "duration": 0.079048456,
+            "location": "KayakHomePage.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user enters the \u003coriginCityAirport\u003e also selects the nearAll airport$",
+    "steps": [
+      {
+        "name": "user enters the \u003coriginCityAirport\u003e also selects the nearAll airport",
+        "aggregatedDurations": {
+          "average": 2.236369575,
+          "median": 2.236369575
+        },
+        "durations": [
+          {
+            "duration": 2.236369575,
+            "location": "KayakHomePage.feature:6"
+          }
+        ]
+      }
+    ]
+  }
+]

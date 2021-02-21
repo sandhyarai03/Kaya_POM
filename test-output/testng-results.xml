@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression Suite" duration-ms="17107" started-at="2021-02-21T17:23:47Z" finished-at="2021-02-21T17:24:04Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunnerTest.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunnerTest@25bbe1b6]" name="feature" class="testRunners.TestRunnerTest"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="login" duration-ms="17107" started-at="2021-02-21T17:23:47Z" finished-at="2021-02-21T17:24:04Z">
+      <class name="testRunners.TestRunnerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.TestRunnerTest@25bbe1b6]" name="setUpClass" is-config="true" duration-ms="164" started-at="2021-02-21T09:23:47Z" finished-at="2021-02-21T09:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunnerTest@25bbe1b6]" name="feature" duration-ms="16863" started-at="2021-02-21T09:23:47Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-02-21T09:24:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kayak Flight search feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.TestRunnerTest@25bbe1b6]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2021-02-21T09:24:04Z" finished-at="2021-02-21T09:24:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.TestRunnerTest -->
+    </test> <!-- login -->
+  </suite> <!-- Regression Suite -->
+</testng-results>

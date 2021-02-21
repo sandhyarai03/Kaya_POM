@@ -1,0 +1,149 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2027642566,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApplicationHook.settingUpEnvironment()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3875730220,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApplicationHook.launchBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Flight search functionality",
+        "description": "",
+        "id": "kayak-flight-search-feature;flight-search-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 120180122,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApplicationHook.quitBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 29320,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApplicationHook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 79048456,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on Kayak Application",
+            "match": {
+              "location": "KayakStepDefTest.user_is_on_Kayak_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1172562653,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on Flight button",
+            "match": {
+              "location": "KayakStepDefTest.user_clicks_on_Flight_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2236369575,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters the \u003coriginCityAirport\u003e also selects the nearAll airport",
+            "match": {
+              "location": "KayakStepDefTest.user_enters_the_originCityAirport_also_selects_the_nearAll_airport()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3160985183,
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d88.0.4324.182)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Sandhya-Rai.attlocal.net\u0027, ip: \u00272600:1700:4a3d:8430:0:0:0:13%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.3\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/88/zslqystj7p7...}, goog:chromeOptions: {debuggerAddress: localhost:51938}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4efeb179b03c906764d4feb276944521\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy21.sendKeys(Unknown Source)\n\tat com.Utils.BrowserUtilities.ufClearFieldByBackSpaceKey(BrowserUtilities.java:222)\n\tat com.Kayak.Pages.KayakHomePage.enterDestinationCity(KayakHomePage.java:161)\n\tat stepDefination.KayakStepDefTest.user_enters_the_and_destinationCityAirport_also_selects_the_nearAll_airport(KayakStepDefTest.java:47)\n\tat ✽.And user enters the and \u003cdestinationCityAirport\u003ealso selects the nearAll airport(KayakHomePage.feature:7)\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user enters the and \u003cdestinationCityAirport\u003ealso selects the nearAll airport",
+            "match": {
+              "location": "KayakStepDefTest.user_enters_the_and_destinationCityAirport_also_selects_the_nearAll_airport()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user selects the \u003cstartDate\u003e and \u003cendDate\u003e",
+            "match": {
+              "location": "KayakStepDefTest.user_selects_the_startDate_and_endDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "user clicks on search button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user unselects the two Stop Option",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user should be able to see the search result based on \u003coriginCityAirport\u003e and \u003cdestinationCityAirport\u003e",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Kayak Flight search feature",
+    "description": "",
+    "id": "kayak-flight-search-feature",
+    "keyword": "Feature",
+    "uri": "KayakHomePage.feature"
+  }
+]
